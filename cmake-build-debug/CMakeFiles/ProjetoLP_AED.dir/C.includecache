@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.h
+
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/main.c
+stdio.h
+-
+clientes.h
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.h
+

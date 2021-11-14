@@ -1,0 +1,3 @@
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cmake-build-debug/CMakeFiles/ProjetoLP_AED.dir
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cmake-build-debug/CMakeFiles/rebuild_cache.dir
