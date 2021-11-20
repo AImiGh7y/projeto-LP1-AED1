@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.c" "C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cmake-build-debug/CMakeFiles/ProjetoLP_AED.dir/cidade.c.obj"
   "C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.c" "C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cmake-build-debug/CMakeFiles/ProjetoLP_AED.dir/clientes.c.obj"
   "C:/Users/Nuno/CLionProjects/ProjetoLP_AED/main.c" "C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cmake-build-debug/CMakeFiles/ProjetoLP_AED.dir/main.c.obj"
+  "C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.c" "C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cmake-build-debug/CMakeFiles/ProjetoLP_AED.dir/viagem.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

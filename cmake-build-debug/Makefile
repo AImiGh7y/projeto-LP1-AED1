@@ -128,6 +128,30 @@ ProjetoLP_AED/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/build
 .PHONY : ProjetoLP_AED/fast
 
+cidade.obj: cidade.c.obj
+.PHONY : cidade.obj
+
+# target to build an object file
+cidade.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/cidade.c.obj
+.PHONY : cidade.c.obj
+
+cidade.i: cidade.c.i
+.PHONY : cidade.i
+
+# target to preprocess a source file
+cidade.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/cidade.c.i
+.PHONY : cidade.c.i
+
+cidade.s: cidade.c.s
+.PHONY : cidade.s
+
+# target to generate assembly for a file
+cidade.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/cidade.c.s
+.PHONY : cidade.c.s
+
 clientes.obj: clientes.c.obj
 .PHONY : clientes.obj
 
@@ -176,6 +200,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/main.c.s
 .PHONY : main.c.s
 
+viagem.obj: viagem.c.obj
+.PHONY : viagem.obj
+
+# target to build an object file
+viagem.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/viagem.c.obj
+.PHONY : viagem.c.obj
+
+viagem.i: viagem.c.i
+.PHONY : viagem.i
+
+# target to preprocess a source file
+viagem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/viagem.c.i
+.PHONY : viagem.c.i
+
+viagem.s: viagem.c.s
+.PHONY : viagem.s
+
+# target to generate assembly for a file
+viagem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/viagem.c.s
+.PHONY : viagem.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +233,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ProjetoLP_AED
+	@echo ... cidade.obj
+	@echo ... cidade.i
+	@echo ... cidade.s
 	@echo ... clientes.obj
 	@echo ... clientes.i
 	@echo ... clientes.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... viagem.obj
+	@echo ... viagem.i
+	@echo ... viagem.s
 .PHONY : help
 
 

@@ -5,10 +5,14 @@
 #ifndef PROJETOLP_AED_CLIENTES_H
 #define PROJETOLP_AED_CLIENTES_H
 
-typedef struct cliente {
+#include "viagem.h"
+
+typedef struct cliente {  // declaracao
     char nome[128];
     int NIF;
     int contacto;
+    VIAGEM *viagens;
+    int num_viagens;
     struct cliente *proximo;
 } CLIENTE;
 
@@ -28,6 +32,9 @@ CLIENTE *pesquisar_NIF(CLIENTES *clientes, int NIF);
 CLIENTE *pesquisar_nome(CLIENTES *clientes, char *nome);
 
 void remover_cliente(CLIENTES *clientes, CLIENTE *cliente);
+
+VIAGEM *inserir_viagem_no_cliente(CLIENTE *cliente);
+void remover_viagem_no_cliente(CLIENTE *cliente, VIAGEM *viagem);
 
 void imprimir_clientes(CLIENTES *clientes);
 

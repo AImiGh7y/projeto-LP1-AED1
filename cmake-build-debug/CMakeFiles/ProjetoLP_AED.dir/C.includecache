@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.h
+
 C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.h
+viagem.h
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.h
 
 C:/Users/Nuno/CLionProjects/ProjetoLP_AED/main.c
 stdio.h
 -
 clientes.h
 C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.h
+
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.h
+cidade.h
+C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.h
 
