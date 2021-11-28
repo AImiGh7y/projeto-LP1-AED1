@@ -86,7 +86,25 @@
 		<Unit filename="C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.h">
 			<Option target="ProjetoLP_AED"/>
 		</Unit>
+		<Unit filename="C:/Users/Nuno/CLionProjects/ProjetoLP_AED/consulta.c">
+			<Option target="ProjetoLP_AED"/>
+		</Unit>
+		<Unit filename="C:/Users/Nuno/CLionProjects/ProjetoLP_AED/consulta.h">
+			<Option target="ProjetoLP_AED"/>
+		</Unit>
+		<Unit filename="C:/Users/Nuno/CLionProjects/ProjetoLP_AED/disco.c">
+			<Option target="ProjetoLP_AED"/>
+		</Unit>
+		<Unit filename="C:/Users/Nuno/CLionProjects/ProjetoLP_AED/disco.h">
+			<Option target="ProjetoLP_AED"/>
+		</Unit>
 		<Unit filename="C:/Users/Nuno/CLionProjects/ProjetoLP_AED/main.c">
+			<Option target="ProjetoLP_AED"/>
+		</Unit>
+		<Unit filename="C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.c">
+			<Option target="ProjetoLP_AED"/>
+		</Unit>
+		<Unit filename="C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.h">
 			<Option target="ProjetoLP_AED"/>
 		</Unit>
 		<Unit filename="C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.c">

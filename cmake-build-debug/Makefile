@@ -176,6 +176,54 @@ clientes.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/clientes.c.s
 .PHONY : clientes.c.s
 
+consulta.obj: consulta.c.obj
+.PHONY : consulta.obj
+
+# target to build an object file
+consulta.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/consulta.c.obj
+.PHONY : consulta.c.obj
+
+consulta.i: consulta.c.i
+.PHONY : consulta.i
+
+# target to preprocess a source file
+consulta.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/consulta.c.i
+.PHONY : consulta.c.i
+
+consulta.s: consulta.c.s
+.PHONY : consulta.s
+
+# target to generate assembly for a file
+consulta.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/consulta.c.s
+.PHONY : consulta.c.s
+
+disco.obj: disco.c.obj
+.PHONY : disco.obj
+
+# target to build an object file
+disco.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/disco.c.obj
+.PHONY : disco.c.obj
+
+disco.i: disco.c.i
+.PHONY : disco.i
+
+# target to preprocess a source file
+disco.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/disco.c.i
+.PHONY : disco.c.i
+
+disco.s: disco.c.s
+.PHONY : disco.s
+
+# target to generate assembly for a file
+disco.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/disco.c.s
+.PHONY : disco.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -199,6 +247,30 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/main.c.s
 .PHONY : main.c.s
+
+poi.obj: poi.c.obj
+.PHONY : poi.obj
+
+# target to build an object file
+poi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/poi.c.obj
+.PHONY : poi.c.obj
+
+poi.i: poi.c.i
+.PHONY : poi.i
+
+# target to preprocess a source file
+poi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/poi.c.i
+.PHONY : poi.c.i
+
+poi.s: poi.c.s
+.PHONY : poi.s
+
+# target to generate assembly for a file
+poi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/poi.c.s
+.PHONY : poi.c.s
 
 viagem.obj: viagem.c.obj
 .PHONY : viagem.obj
@@ -239,9 +311,18 @@ help:
 	@echo ... clientes.obj
 	@echo ... clientes.i
 	@echo ... clientes.s
+	@echo ... consulta.obj
+	@echo ... consulta.i
+	@echo ... consulta.s
+	@echo ... disco.obj
+	@echo ... disco.i
+	@echo ... disco.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... poi.obj
+	@echo ... poi.i
+	@echo ... poi.s
 	@echo ... viagem.obj
 	@echo ... viagem.i
 	@echo ... viagem.s

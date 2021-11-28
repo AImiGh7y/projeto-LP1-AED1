@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "clientes.h"
+#include "disco.h"
 
 int main() {
     CLIENTES *clientes = criar_clientes();
@@ -25,6 +26,8 @@ int main() {
     adicionar_cidade_a_viagem(v1, "Coimbra", "");
     adicionar_cidade_a_viagem(v1, "Braga", "");
     imprimir_viagem(v1);
+
+    escrever_ficheiros_txt(clientes);
 
     return 0;
 }

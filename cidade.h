@@ -5,9 +5,12 @@
 #ifndef PROJETOLP_AED_CIDADE_H
 #define PROJETOLP_AED_CIDADE_H
 
+#include "poi.h"
+
 typedef struct cidade {
     char nome[128];
     char descricao[1024];
+    POIS pois;
 } CIDADE;
 
 int comparar_cidades(CIDADE *a, CIDADE *b);

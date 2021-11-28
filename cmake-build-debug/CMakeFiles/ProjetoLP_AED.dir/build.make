@@ -117,12 +117,54 @@ CMakeFiles/ProjetoLP_AED.dir/cidade.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ProjetoLP_AED.dir/cidade.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Nuno\CLionProjects\ProjetoLP_AED\cidade.c -o CMakeFiles\ProjetoLP_AED.dir\cidade.c.s
 
+CMakeFiles/ProjetoLP_AED.dir/poi.c.obj: CMakeFiles/ProjetoLP_AED.dir/flags.make
+CMakeFiles/ProjetoLP_AED.dir/poi.c.obj: ../poi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Nuno\CLionProjects\ProjetoLP_AED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ProjetoLP_AED.dir/poi.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLP_AED.dir\poi.c.obj -c C:\Users\Nuno\CLionProjects\ProjetoLP_AED\poi.c
+
+CMakeFiles/ProjetoLP_AED.dir/poi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ProjetoLP_AED.dir/poi.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Nuno\CLionProjects\ProjetoLP_AED\poi.c > CMakeFiles\ProjetoLP_AED.dir\poi.c.i
+
+CMakeFiles/ProjetoLP_AED.dir/poi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ProjetoLP_AED.dir/poi.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Nuno\CLionProjects\ProjetoLP_AED\poi.c -o CMakeFiles\ProjetoLP_AED.dir\poi.c.s
+
+CMakeFiles/ProjetoLP_AED.dir/consulta.c.obj: CMakeFiles/ProjetoLP_AED.dir/flags.make
+CMakeFiles/ProjetoLP_AED.dir/consulta.c.obj: ../consulta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Nuno\CLionProjects\ProjetoLP_AED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ProjetoLP_AED.dir/consulta.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLP_AED.dir\consulta.c.obj -c C:\Users\Nuno\CLionProjects\ProjetoLP_AED\consulta.c
+
+CMakeFiles/ProjetoLP_AED.dir/consulta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ProjetoLP_AED.dir/consulta.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Nuno\CLionProjects\ProjetoLP_AED\consulta.c > CMakeFiles\ProjetoLP_AED.dir\consulta.c.i
+
+CMakeFiles/ProjetoLP_AED.dir/consulta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ProjetoLP_AED.dir/consulta.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Nuno\CLionProjects\ProjetoLP_AED\consulta.c -o CMakeFiles\ProjetoLP_AED.dir\consulta.c.s
+
+CMakeFiles/ProjetoLP_AED.dir/disco.c.obj: CMakeFiles/ProjetoLP_AED.dir/flags.make
+CMakeFiles/ProjetoLP_AED.dir/disco.c.obj: ../disco.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Nuno\CLionProjects\ProjetoLP_AED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ProjetoLP_AED.dir/disco.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLP_AED.dir\disco.c.obj -c C:\Users\Nuno\CLionProjects\ProjetoLP_AED\disco.c
+
+CMakeFiles/ProjetoLP_AED.dir/disco.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ProjetoLP_AED.dir/disco.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Nuno\CLionProjects\ProjetoLP_AED\disco.c > CMakeFiles\ProjetoLP_AED.dir\disco.c.i
+
+CMakeFiles/ProjetoLP_AED.dir/disco.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ProjetoLP_AED.dir/disco.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Nuno\CLionProjects\ProjetoLP_AED\disco.c -o CMakeFiles\ProjetoLP_AED.dir\disco.c.s
+
 # Object files for target ProjetoLP_AED
 ProjetoLP_AED_OBJECTS = \
 "CMakeFiles/ProjetoLP_AED.dir/main.c.obj" \
 "CMakeFiles/ProjetoLP_AED.dir/clientes.c.obj" \
 "CMakeFiles/ProjetoLP_AED.dir/viagem.c.obj" \
-"CMakeFiles/ProjetoLP_AED.dir/cidade.c.obj"
+"CMakeFiles/ProjetoLP_AED.dir/cidade.c.obj" \
+"CMakeFiles/ProjetoLP_AED.dir/poi.c.obj" \
+"CMakeFiles/ProjetoLP_AED.dir/consulta.c.obj" \
+"CMakeFiles/ProjetoLP_AED.dir/disco.c.obj"
 
 # External object files for target ProjetoLP_AED
 ProjetoLP_AED_EXTERNAL_OBJECTS =
@@ -131,11 +173,14 @@ ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/main.c.obj
 ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/clientes.c.obj
 ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/viagem.c.obj
 ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/cidade.c.obj
+ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/poi.c.obj
+ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/consulta.c.obj
+ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/disco.c.obj
 ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/build.make
 ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/linklibs.rsp
 ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/objects1.rsp
 ProjetoLP_AED.exe: CMakeFiles/ProjetoLP_AED.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Nuno\CLionProjects\ProjetoLP_AED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ProjetoLP_AED.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Nuno\CLionProjects\ProjetoLP_AED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable ProjetoLP_AED.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ProjetoLP_AED.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

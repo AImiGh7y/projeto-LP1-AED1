@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ProjetoLP_AED.dir/cidade.c.obj"
   "CMakeFiles/ProjetoLP_AED.dir/clientes.c.obj"
+  "CMakeFiles/ProjetoLP_AED.dir/consulta.c.obj"
+  "CMakeFiles/ProjetoLP_AED.dir/disco.c.obj"
   "CMakeFiles/ProjetoLP_AED.dir/main.c.obj"
+  "CMakeFiles/ProjetoLP_AED.dir/poi.c.obj"
   "CMakeFiles/ProjetoLP_AED.dir/viagem.c.obj"
   "ProjetoLP_AED.exe"
   "ProjetoLP_AED.exe.manifest"

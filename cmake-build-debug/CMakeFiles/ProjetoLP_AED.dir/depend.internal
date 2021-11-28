@@ -4,17 +4,39 @@
 CMakeFiles/ProjetoLP_AED.dir/cidade.c.obj
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.c
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.h
 CMakeFiles/ProjetoLP_AED.dir/clientes.c.obj
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.h
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.c
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.h
+CMakeFiles/ProjetoLP_AED.dir/consulta.c.obj
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/consulta.c
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/consulta.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.h
+CMakeFiles/ProjetoLP_AED.dir/disco.c.obj
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/disco.c
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/disco.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.h
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.h
 CMakeFiles/ProjetoLP_AED.dir/main.c.obj
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.h
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/clientes.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/disco.h
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/main.c
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.h
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.h
+CMakeFiles/ProjetoLP_AED.dir/poi.c.obj
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.c
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.h
 CMakeFiles/ProjetoLP_AED.dir/viagem.c.obj
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/cidade.h
+ C:/Users/Nuno/CLionProjects/ProjetoLP_AED/poi.h
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.c
  C:/Users/Nuno/CLionProjects/ProjetoLP_AED/viagem.h
