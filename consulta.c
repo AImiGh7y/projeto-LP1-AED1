@@ -12,7 +12,7 @@ VIAGEM *viagem_que_passou(CLIENTES *clientes, char *nome_cidade)
         for(int i = 0; i < it->num_viagens; i++) {
             VIAGEM *viagem = &it->viagens[i];
             for(int j = 0; j < viagem->num_cidades; j++) {
-                if(strcmp(viagem->cidades[j].nome, nome_cidade) == 0) {
+                if(strcmp(viagem->cidades[j]->nome, nome_cidade) == 0) {
                     return viagem;
                 }
             }
@@ -29,7 +29,7 @@ VIAGEM *viagem_visitou_poi(CLIENTES *clientes, char *nome_poi)
         for(int i = 0; i < it->num_viagens; i++) {
             VIAGEM *viagem = &it->viagens[i];
             for(int j = 0; j < viagem->num_cidades; j++) {
-                POI *poi_it = viagem->cidades[j].pois.primeiro;
+                POI *poi_it = viagem->cidades[j]->pois.primeiro;
                 while(poi_it != NULL) {
                     if(strcmp(poi_it->nome, nome_poi) == 0) {
                         return viagem;

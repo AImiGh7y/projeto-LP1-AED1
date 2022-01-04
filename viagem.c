@@ -7,12 +7,12 @@
 #include <stdio.h>
 #include "viagem.h"
 
-CIDADE *criar_array_cidades(int tamanho) {
-    return calloc(tamanho, sizeof(CIDADE));
+CIDADE **criar_array_cidades(int tamanho) {
+    return calloc(tamanho, sizeof(CIDADE*));
 }
 
-CIDADE *redimensionar_array_cidades(CIDADE *cidades, int novo_tamanho) {
-    return realloc(cidades, novo_tamanho*sizeof(CIDADE));
+CIDADE **redimensionar_array_cidades(CIDADE **cidades, int novo_tamanho) {
+    return realloc(cidades, novo_tamanho*sizeof(CIDADE*));
 }
 
 VIAGEM *criar_viagem() {
@@ -22,10 +22,9 @@ VIAGEM *criar_viagem() {
     return viagem;
 }
 
-void adicionar_cidade_a_viagem(VIAGEM *viagem, char *nome, char *descricao) {
+void adicionar_cidade_a_viagem(VIAGEM *viagem, CIDADE *cidade) {
     viagem->cidades = redimensionar_array_cidades(viagem->cidades, viagem->num_cidades+1);
-    strcpy(viagem->cidades[viagem->num_cidades].nome, nome);
-    strcpy(viagem->cidades[viagem->num_cidades].descricao, descricao);
+    viagem->cidades[viagem->num_cidades] = cidade;
     viagem->num_cidades++;
 }
 
@@ -33,7 +32,7 @@ void remover_cidade_a_viagem(VIAGEM *viagem, char *nome) {
     // procurar pela cidade com "nome"
     int posicao = -1;
     for(int i = 0; i < viagem->num_cidades; i++) {
-        if(strcmp(viagem->cidades[i].nome, nome) == 0) {
+        if(strcmp(viagem->cidades[i]->nome, nome) == 0) {
             posicao = i;
             break;
         }
@@ -49,6 +48,14 @@ void remover_cidade_a_viagem(VIAGEM *viagem, char *nome) {
     // redimensionar
     viagem->cidades = redimensionar_array_cidades(viagem->cidades, viagem->num_cidades-1);
     viagem->num_cidades--;
+}
+
+int viagem_tem_cidade(VIAGEM *viagem, CIDADE *cidade)
+{
+    for(int i = 0; i < viagem->num_cidades; i++)
+        if(viagem->cidades[i] == cidade)
+            return 1;
+    return 0;
 }
 
 int comparar_viagem(VIAGEM *a, VIAGEM *b)

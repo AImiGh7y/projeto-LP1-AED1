@@ -11,7 +11,10 @@ typedef struct cidade {
     char nome[128];
     char descricao[1024];
     POIS pois;
+    float lat, lon;
 } CIDADE;
+
+CIDADE *criar_cidade(char *nome, char *descricao, float lat, float lon);
 
 int comparar_cidades(CIDADE *a, CIDADE *b);
 

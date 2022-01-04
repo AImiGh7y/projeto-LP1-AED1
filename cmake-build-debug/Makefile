@@ -128,6 +128,30 @@ ProjetoLP_AED/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/build
 .PHONY : ProjetoLP_AED/fast
 
+ag.obj: ag.c.obj
+.PHONY : ag.obj
+
+# target to build an object file
+ag.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/ag.c.obj
+.PHONY : ag.c.obj
+
+ag.i: ag.c.i
+.PHONY : ag.i
+
+# target to preprocess a source file
+ag.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/ag.c.i
+.PHONY : ag.c.i
+
+ag.s: ag.c.s
+.PHONY : ag.s
+
+# target to generate assembly for a file
+ag.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP_AED.dir\build.make CMakeFiles/ProjetoLP_AED.dir/ag.c.s
+.PHONY : ag.c.s
+
 cidade.obj: cidade.c.obj
 .PHONY : cidade.obj
 
@@ -305,6 +329,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ProjetoLP_AED
+	@echo ... ag.obj
+	@echo ... ag.i
+	@echo ... ag.s
 	@echo ... cidade.obj
 	@echo ... cidade.i
 	@echo ... cidade.s
