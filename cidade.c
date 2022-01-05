@@ -25,5 +25,5 @@ int comparar_cidades(CIDADE *a, CIDADE *b) {
 }
 
 void imprimir_cidade(CIDADE *cidade) {
-    printf("%s\n", cidade);
+    printf("%s\n", cidade->nome);
 }

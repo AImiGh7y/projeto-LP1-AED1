@@ -45,6 +45,7 @@ int main() {
     GERACAO *g = ag_criar_geracao_aleatoria(ag, cidades);
 
     for(int i = 0; i < 5; i++) {
+        printf("========= Trajeto %d =========\n", i);
         VIAGEM *viagem = g->progenitores[i];
         imprimir_viagem(viagem);
         printf("aptidao: %f\n", calcular_aptidao(viagem));

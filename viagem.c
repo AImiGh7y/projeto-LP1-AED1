@@ -63,7 +63,7 @@ int comparar_viagem(VIAGEM *a, VIAGEM *b)
     if(a->num_cidades != b->num_cidades)
         return 0;
     for(int i = 0; i < a->num_cidades; i++)
-        if(comparar_cidades(&a->cidades[i], &b->cidades[i]) == 0)
+        if(comparar_cidades(a->cidades[i], b->cidades[i]) == 0)
             return 0;
     return 1;
 }
@@ -71,5 +71,5 @@ int comparar_viagem(VIAGEM *a, VIAGEM *b)
 void imprimir_viagem(VIAGEM *viagem)
 {
     for(int i = 0; i < viagem->num_cidades; i++)
-        imprimir_cidade(&viagem->cidades[i]);
+        imprimir_cidade(viagem->cidades[i]);
 }
