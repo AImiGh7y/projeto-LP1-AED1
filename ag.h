@@ -23,7 +23,7 @@
 typedef struct geracao {
     VIAGEM **progenitores;
     VIAGEM **herdeiros;
-    struct geracao *proximo;
+    struct geracao *proxima;
 } GERACAO;
 
 typedef struct ag {
@@ -44,6 +44,12 @@ void ag_inserir_geracao_cauda(AG *ag, GERACAO *nova);
 GERACAO *ag_pesquisar_geracao_id(AG *ag, int iteracao);
 
 GERACAO *ag_criar_geracao_aleatoria(AG *ag, CIDADE **cidades);
+GERACAO *ag_criar_proxima_geracao(AG *ag);
+
+float calcular_distancia(VIAGEM *viagem);
 float calcular_aptidao(VIAGEM *viagem);
+int selecao_por_aptidao(AG *ag, GERACAO *geracao);
+VIAGEM *cruzamento_viagens(VIAGEM *p1, VIAGEM *p2);
+VIAGEM *ag_melhor_aptidao(AG *ag, GERACAO *g);
 
 #endif //PROJETOLP_AED_AG_H

@@ -9,6 +9,8 @@
 C:/Users/Nuno/CLionProjects/ProjetoLP_AED/ag.c
 stdlib.h
 -
+stdio.h
+-
 math.h
 -
 ag.h

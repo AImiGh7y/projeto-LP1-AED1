@@ -1,9 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include "clientes.h"
 #include "disco.h"
 #include "ag.h"
 
+void imprimir_geracao(AG *ag, GERACAO *g) {
+    for(int i = 0; i < ag->P; i++) {
+        printf("========= Trajeto %d =========\n", i);
+        VIAGEM *viagem = g->progenitores[i];
+        imprimir_viagem(viagem);
+        printf("aptidao: %f\n", calcular_aptidao(viagem));
+    }
+}
+
 int main() {
+    srand(time(NULL));
+
     CLIENTES *clientes = criar_clientes();
 
     inserir_ordenado_NIF(clientes, criar_cliente("Maria",   4353431, 91435323));
@@ -41,17 +54,16 @@ int main() {
 
     //////////////////////////////////////////////////////////////
 
-    AG *ag = ag_criar(5, 0.01, 2, 50, 5);
+    AG *ag = ag_criar(6, 0.01, 2, 50, 5);
     GERACAO *g = ag_criar_geracao_aleatoria(ag, cidades);
-
-    for(int i = 0; i < 5; i++) {
-        printf("========= Trajeto %d =========\n", i);
-        VIAGEM *viagem = g->progenitores[i];
-        imprimir_viagem(viagem);
-        printf("aptidao: %f\n", calcular_aptidao(viagem));
+    for(int it = 0; it < ag->G; it++) {
+        printf("iteracao %d\n", it);
+        g = ag_criar_proxima_geracao(ag);
     }
-
-
-
+    printf("=== Melhor viagem encontrada ===\n");
+    VIAGEM *melhor = ag_melhor_aptidao(ag, g);
+    imprimir_viagem(melhor);
+    printf("Distancia viagem = %f\n", calcular_distancia(melhor));
+ 
     return 0;
 }
