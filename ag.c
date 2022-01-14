@@ -178,7 +178,7 @@ GERACAO *ag_criar_proxima_geracao(AG *ag)
         }
     }
 
-    // preparar proxima geracao
+    // proxima geracao
     GERACAO *nova = malloc(sizeof(GERACAO));
     nova->progenitores = ultima->herdeiros;
     nova->herdeiros = NULL;
