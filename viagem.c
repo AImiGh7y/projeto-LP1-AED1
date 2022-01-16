@@ -58,6 +58,14 @@ int viagem_tem_cidade(VIAGEM *viagem, CIDADE *cidade)
     return 0;
 }
 
+CIDADE *viagem_pesquisar_cidade(VIAGEM *viagem, char *nome_cidade)
+{
+    for(int i = 0; i < viagem->num_cidades; i++)
+        if(strcmp(viagem->cidades[i], nome_cidade) == 0)
+            return viagem->cidades[i];
+    return NULL;
+}
+
 int comparar_viagem(VIAGEM *a, VIAGEM *b)
 {
     if(a->num_cidades != b->num_cidades)

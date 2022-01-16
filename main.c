@@ -37,6 +37,9 @@ int main() {
     CIDADE *c5 = criar_cidade("Braga", "", 41.5333, -8.4167);
     CIDADE *cidades[] = {c1, c2, c3, c4, c5};
 
+    POI *clerigos = criar_poi("Torre Clerigos", "Porto");
+    inserir_poi(&c1->pois, clerigos);
+
     //////////////////////////////////////////////////////////////
 
     CLIENTE *c = pesquisar_nome(clientes, "Beatriz");

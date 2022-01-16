@@ -1,0 +1,134 @@
+\hypertarget{clientes_8h}{}\doxysection{clientes.\+h File Reference}
+\label{clientes_8h}\index{clientes.h@{clientes.h}}
+{\ttfamily \#include \char`\"{}viagem.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcliente}{cliente}}
+\item 
+struct \mbox{\hyperlink{structclientes}{clientes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structcliente}{cliente}} \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}}
+\item 
+typedef struct \mbox{\hyperlink{structclientes}{clientes}} \mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$ \mbox{\hyperlink{clientes_8h_a3346e59c2ca2b070c42939f000258b2d}{criar\+\_\+clientes}} ()
+\item 
+\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$ \mbox{\hyperlink{clientes_8h_a982498d88c0d0016b102ae0141e6ea21}{criar\+\_\+cliente}} (char $\ast$nome, int NIF, int contacto)
+\item 
+void \mbox{\hyperlink{clientes_8h_a4f83ce0df05869c0f59c196ba33d3d7a}{inserir\+\_\+cabeca}} (\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$\mbox{\hyperlink{structcliente}{cliente}})
+\item 
+void \mbox{\hyperlink{clientes_8h_a0c922f55e9a8785a3ce6fffd427600df}{inserir\+\_\+cauda}} (\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$\mbox{\hyperlink{structcliente}{cliente}})
+\item 
+void \mbox{\hyperlink{clientes_8h_a86bf3cd094196635d582b27a9d53afb9}{inserir\+\_\+ordenado\+\_\+\+NIF}} (\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$\mbox{\hyperlink{structcliente}{cliente}})
+\item 
+void \mbox{\hyperlink{clientes_8h_ad2efd35a62b24f288a8e3de3572c4852}{inserir\+\_\+ordenado\+\_\+nome}} (\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$\mbox{\hyperlink{structcliente}{cliente}})
+\item 
+\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$ \mbox{\hyperlink{clientes_8h_a95db671d8fc3679ce7082a3f88d2d11a}{pesquisar\+\_\+\+NIF}} (\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$\mbox{\hyperlink{structclientes}{clientes}}, int NIF)
+\item 
+\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$ \mbox{\hyperlink{clientes_8h_a5bf4bd9ae1cee00dade8c8e91e1c09ea}{pesquisar\+\_\+nome}} (\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$\mbox{\hyperlink{structclientes}{clientes}}, char $\ast$nome)
+\item 
+void \mbox{\hyperlink{clientes_8h_acdf49cd32b8a80f0a232f5d9abfcfba4}{remover\+\_\+cliente}} (\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$\mbox{\hyperlink{structcliente}{cliente}})
+\item 
+\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$ \mbox{\hyperlink{clientes_8h_ab0c916e11a411f3e57ee8efae4f7bba1}{inserir\+\_\+viagem\+\_\+no\+\_\+cliente}} (\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$\mbox{\hyperlink{structcliente}{cliente}})
+\item 
+void \mbox{\hyperlink{clientes_8h_ae211b65c745194a451e1ad6f0205ea11}{remover\+\_\+viagem\+\_\+no\+\_\+cliente}} (\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$\mbox{\hyperlink{structcliente}{cliente}}, \mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$\mbox{\hyperlink{structviagem}{viagem}})
+\item 
+void \mbox{\hyperlink{clientes_8h_a652d54af2fb43771804795e660575b24}{imprimir\+\_\+clientes}} (\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$\mbox{\hyperlink{structclientes}{clientes}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{clientes_8h_a26769430110345c8224ef99b907ac47d}\label{clientes_8h_a26769430110345c8224ef99b907ac47d}} 
+\index{clientes.h@{clientes.h}!CLIENTE@{CLIENTE}}
+\index{CLIENTE@{CLIENTE}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{CLIENTE}{CLIENTE}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structcliente}{cliente}} \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}}}
+
+\mbox{\Hypertarget{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}\label{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}} 
+\index{clientes.h@{clientes.h}!CLIENTES@{CLIENTES}}
+\index{CLIENTES@{CLIENTES}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{CLIENTES}{CLIENTES}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structclientes}{clientes}} \mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{clientes_8h_a982498d88c0d0016b102ae0141e6ea21}\label{clientes_8h_a982498d88c0d0016b102ae0141e6ea21}} 
+\index{clientes.h@{clientes.h}!criar\_cliente@{criar\_cliente}}
+\index{criar\_cliente@{criar\_cliente}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{criar\_cliente()}{criar\_cliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$ criar\+\_\+cliente (\begin{DoxyParamCaption}\item[{char $\ast$}]{nome,  }\item[{int}]{NIF,  }\item[{int}]{contacto }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_a3346e59c2ca2b070c42939f000258b2d}\label{clientes_8h_a3346e59c2ca2b070c42939f000258b2d}} 
+\index{clientes.h@{clientes.h}!criar\_clientes@{criar\_clientes}}
+\index{criar\_clientes@{criar\_clientes}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{criar\_clientes()}{criar\_clientes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$ criar\+\_\+clientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_a652d54af2fb43771804795e660575b24}\label{clientes_8h_a652d54af2fb43771804795e660575b24}} 
+\index{clientes.h@{clientes.h}!imprimir\_clientes@{imprimir\_clientes}}
+\index{imprimir\_clientes@{imprimir\_clientes}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{imprimir\_clientes()}{imprimir\_clientes()}}
+{\footnotesize\ttfamily void imprimir\+\_\+clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_a4f83ce0df05869c0f59c196ba33d3d7a}\label{clientes_8h_a4f83ce0df05869c0f59c196ba33d3d7a}} 
+\index{clientes.h@{clientes.h}!inserir\_cabeca@{inserir\_cabeca}}
+\index{inserir\_cabeca@{inserir\_cabeca}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{inserir\_cabeca()}{inserir\_cabeca()}}
+{\footnotesize\ttfamily void inserir\+\_\+cabeca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$}]{clientes,  }\item[{\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_a0c922f55e9a8785a3ce6fffd427600df}\label{clientes_8h_a0c922f55e9a8785a3ce6fffd427600df}} 
+\index{clientes.h@{clientes.h}!inserir\_cauda@{inserir\_cauda}}
+\index{inserir\_cauda@{inserir\_cauda}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{inserir\_cauda()}{inserir\_cauda()}}
+{\footnotesize\ttfamily void inserir\+\_\+cauda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$}]{clientes,  }\item[{\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_a86bf3cd094196635d582b27a9d53afb9}\label{clientes_8h_a86bf3cd094196635d582b27a9d53afb9}} 
+\index{clientes.h@{clientes.h}!inserir\_ordenado\_NIF@{inserir\_ordenado\_NIF}}
+\index{inserir\_ordenado\_NIF@{inserir\_ordenado\_NIF}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{inserir\_ordenado\_NIF()}{inserir\_ordenado\_NIF()}}
+{\footnotesize\ttfamily void inserir\+\_\+ordenado\+\_\+\+NIF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$}]{clientes,  }\item[{\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_ad2efd35a62b24f288a8e3de3572c4852}\label{clientes_8h_ad2efd35a62b24f288a8e3de3572c4852}} 
+\index{clientes.h@{clientes.h}!inserir\_ordenado\_nome@{inserir\_ordenado\_nome}}
+\index{inserir\_ordenado\_nome@{inserir\_ordenado\_nome}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{inserir\_ordenado\_nome()}{inserir\_ordenado\_nome()}}
+{\footnotesize\ttfamily void inserir\+\_\+ordenado\+\_\+nome (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$}]{clientes,  }\item[{\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_ab0c916e11a411f3e57ee8efae4f7bba1}\label{clientes_8h_ab0c916e11a411f3e57ee8efae4f7bba1}} 
+\index{clientes.h@{clientes.h}!inserir\_viagem\_no\_cliente@{inserir\_viagem\_no\_cliente}}
+\index{inserir\_viagem\_no\_cliente@{inserir\_viagem\_no\_cliente}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{inserir\_viagem\_no\_cliente()}{inserir\_viagem\_no\_cliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$ inserir\+\_\+viagem\+\_\+no\+\_\+cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_a95db671d8fc3679ce7082a3f88d2d11a}\label{clientes_8h_a95db671d8fc3679ce7082a3f88d2d11a}} 
+\index{clientes.h@{clientes.h}!pesquisar\_NIF@{pesquisar\_NIF}}
+\index{pesquisar\_NIF@{pesquisar\_NIF}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{pesquisar\_NIF()}{pesquisar\_NIF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$ pesquisar\+\_\+\+NIF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$}]{clientes,  }\item[{int}]{NIF }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_a5bf4bd9ae1cee00dade8c8e91e1c09ea}\label{clientes_8h_a5bf4bd9ae1cee00dade8c8e91e1c09ea}} 
+\index{clientes.h@{clientes.h}!pesquisar\_nome@{pesquisar\_nome}}
+\index{pesquisar\_nome@{pesquisar\_nome}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{pesquisar\_nome()}{pesquisar\_nome()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$ pesquisar\+\_\+nome (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$}]{clientes,  }\item[{char $\ast$}]{nome }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_acdf49cd32b8a80f0a232f5d9abfcfba4}\label{clientes_8h_acdf49cd32b8a80f0a232f5d9abfcfba4}} 
+\index{clientes.h@{clientes.h}!remover\_cliente@{remover\_cliente}}
+\index{remover\_cliente@{remover\_cliente}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{remover\_cliente()}{remover\_cliente()}}
+{\footnotesize\ttfamily void remover\+\_\+cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}} $\ast$}]{clientes,  }\item[{\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clientes_8h_ae211b65c745194a451e1ad6f0205ea11}\label{clientes_8h_ae211b65c745194a451e1ad6f0205ea11}} 
+\index{clientes.h@{clientes.h}!remover\_viagem\_no\_cliente@{remover\_viagem\_no\_cliente}}
+\index{remover\_viagem\_no\_cliente@{remover\_viagem\_no\_cliente}!clientes.h@{clientes.h}}
+\doxysubsubsection{\texorpdfstring{remover\_viagem\_no\_cliente()}{remover\_viagem\_no\_cliente()}}
+{\footnotesize\ttfamily void remover\+\_\+viagem\+\_\+no\+\_\+cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}} $\ast$}]{cliente,  }\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{viagem }\end{DoxyParamCaption})}
+

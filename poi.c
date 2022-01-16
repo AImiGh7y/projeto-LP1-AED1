@@ -49,3 +49,7 @@ void remover_poi(POIS *pois, POI *poi)
     }
 }
 
+void editar_nome_poi(POI *poi, char *novo_nome)
+{
+    strcpy(poi->nome, novo_nome);
+}

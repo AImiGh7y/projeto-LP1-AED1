@@ -1,0 +1,76 @@
+\hypertarget{viagem_8c}{}\doxysection{viagem.\+c File Reference}
+\label{viagem_8c}\index{viagem.c@{viagem.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}viagem.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$$\ast$ \mbox{\hyperlink{viagem_8c_aad73a569d0ff2d27f4ee1334d4fcb346}{criar\+\_\+array\+\_\+cidades}} (int tamanho)
+\item 
+\mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$$\ast$ \mbox{\hyperlink{viagem_8c_ab1052b12de99ea027808ac8c94878b15}{redimensionar\+\_\+array\+\_\+cidades}} (\mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$$\ast$cidades, int novo\+\_\+tamanho)
+\item 
+\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$ \mbox{\hyperlink{viagem_8c_a9b540f5fb51ada8d43afbff47ec24f9f}{criar\+\_\+viagem}} ()
+\item 
+void \mbox{\hyperlink{viagem_8c_a27d9c0fe894980127262da90a447632a}{adicionar\+\_\+cidade\+\_\+a\+\_\+viagem}} (\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$\mbox{\hyperlink{structviagem}{viagem}}, \mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$\mbox{\hyperlink{structcidade}{cidade}})
+\item 
+void \mbox{\hyperlink{viagem_8c_aebea463fe7fa8565932c4d581e079323}{remover\+\_\+cidade\+\_\+a\+\_\+viagem}} (\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$\mbox{\hyperlink{structviagem}{viagem}}, char $\ast$nome)
+\item 
+int \mbox{\hyperlink{viagem_8c_a92419589554705a465e17967c5b61bd0}{viagem\+\_\+tem\+\_\+cidade}} (\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$\mbox{\hyperlink{structviagem}{viagem}}, \mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$\mbox{\hyperlink{structcidade}{cidade}})
+\item 
+int \mbox{\hyperlink{viagem_8c_a38ea73b43022fccbe213ead6c176509f}{comparar\+\_\+viagem}} (\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$a, \mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$b)
+\item 
+void \mbox{\hyperlink{viagem_8c_aa5a7b53c0f14b05224d7555d3d57b650}{imprimir\+\_\+viagem}} (\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$\mbox{\hyperlink{structviagem}{viagem}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{viagem_8c_a27d9c0fe894980127262da90a447632a}\label{viagem_8c_a27d9c0fe894980127262da90a447632a}} 
+\index{viagem.c@{viagem.c}!adicionar\_cidade\_a\_viagem@{adicionar\_cidade\_a\_viagem}}
+\index{adicionar\_cidade\_a\_viagem@{adicionar\_cidade\_a\_viagem}!viagem.c@{viagem.c}}
+\doxysubsubsection{\texorpdfstring{adicionar\_cidade\_a\_viagem()}{adicionar\_cidade\_a\_viagem()}}
+{\footnotesize\ttfamily void adicionar\+\_\+cidade\+\_\+a\+\_\+viagem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{viagem,  }\item[{\mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$}]{cidade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{viagem_8c_a38ea73b43022fccbe213ead6c176509f}\label{viagem_8c_a38ea73b43022fccbe213ead6c176509f}} 
+\index{viagem.c@{viagem.c}!comparar\_viagem@{comparar\_viagem}}
+\index{comparar\_viagem@{comparar\_viagem}!viagem.c@{viagem.c}}
+\doxysubsubsection{\texorpdfstring{comparar\_viagem()}{comparar\_viagem()}}
+{\footnotesize\ttfamily int comparar\+\_\+viagem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{viagem_8c_aad73a569d0ff2d27f4ee1334d4fcb346}\label{viagem_8c_aad73a569d0ff2d27f4ee1334d4fcb346}} 
+\index{viagem.c@{viagem.c}!criar\_array\_cidades@{criar\_array\_cidades}}
+\index{criar\_array\_cidades@{criar\_array\_cidades}!viagem.c@{viagem.c}}
+\doxysubsubsection{\texorpdfstring{criar\_array\_cidades()}{criar\_array\_cidades()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$$\ast$ criar\+\_\+array\+\_\+cidades (\begin{DoxyParamCaption}\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{viagem_8c_a9b540f5fb51ada8d43afbff47ec24f9f}\label{viagem_8c_a9b540f5fb51ada8d43afbff47ec24f9f}} 
+\index{viagem.c@{viagem.c}!criar\_viagem@{criar\_viagem}}
+\index{criar\_viagem@{criar\_viagem}!viagem.c@{viagem.c}}
+\doxysubsubsection{\texorpdfstring{criar\_viagem()}{criar\_viagem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$ criar\+\_\+viagem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{viagem_8c_aa5a7b53c0f14b05224d7555d3d57b650}\label{viagem_8c_aa5a7b53c0f14b05224d7555d3d57b650}} 
+\index{viagem.c@{viagem.c}!imprimir\_viagem@{imprimir\_viagem}}
+\index{imprimir\_viagem@{imprimir\_viagem}!viagem.c@{viagem.c}}
+\doxysubsubsection{\texorpdfstring{imprimir\_viagem()}{imprimir\_viagem()}}
+{\footnotesize\ttfamily void imprimir\+\_\+viagem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{viagem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{viagem_8c_ab1052b12de99ea027808ac8c94878b15}\label{viagem_8c_ab1052b12de99ea027808ac8c94878b15}} 
+\index{viagem.c@{viagem.c}!redimensionar\_array\_cidades@{redimensionar\_array\_cidades}}
+\index{redimensionar\_array\_cidades@{redimensionar\_array\_cidades}!viagem.c@{viagem.c}}
+\doxysubsubsection{\texorpdfstring{redimensionar\_array\_cidades()}{redimensionar\_array\_cidades()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$$\ast$ redimensionar\+\_\+array\+\_\+cidades (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$$\ast$}]{cidades,  }\item[{int}]{novo\+\_\+tamanho }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{viagem_8c_aebea463fe7fa8565932c4d581e079323}\label{viagem_8c_aebea463fe7fa8565932c4d581e079323}} 
+\index{viagem.c@{viagem.c}!remover\_cidade\_a\_viagem@{remover\_cidade\_a\_viagem}}
+\index{remover\_cidade\_a\_viagem@{remover\_cidade\_a\_viagem}!viagem.c@{viagem.c}}
+\doxysubsubsection{\texorpdfstring{remover\_cidade\_a\_viagem()}{remover\_cidade\_a\_viagem()}}
+{\footnotesize\ttfamily void remover\+\_\+cidade\+\_\+a\+\_\+viagem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{viagem,  }\item[{char $\ast$}]{nome }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{viagem_8c_a92419589554705a465e17967c5b61bd0}\label{viagem_8c_a92419589554705a465e17967c5b61bd0}} 
+\index{viagem.c@{viagem.c}!viagem\_tem\_cidade@{viagem\_tem\_cidade}}
+\index{viagem\_tem\_cidade@{viagem\_tem\_cidade}!viagem.c@{viagem.c}}
+\doxysubsubsection{\texorpdfstring{viagem\_tem\_cidade()}{viagem\_tem\_cidade()}}
+{\footnotesize\ttfamily int viagem\+\_\+tem\+\_\+cidade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{viagem,  }\item[{\mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$}]{cidade }\end{DoxyParamCaption})}
+

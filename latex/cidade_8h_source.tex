@@ -1,0 +1,28 @@
+\hypertarget{cidade_8h_source}{}\doxysection{cidade.\+h}
+\mbox{\hyperlink{cidade_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Nuno on 20/11/2021.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef PROJETOLP\_AED\_CIDADE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define PROJETOLP\_AED\_CIDADE\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{poi_8h}{poi.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structcidade}{cidade}} \{}
+\DoxyCodeLine{11     \textcolor{keywordtype}{char} \mbox{\hyperlink{structcidade_a710c5078e92db21a23a3c0a85cbc72a3}{nome}}[128];}
+\DoxyCodeLine{12     \textcolor{keywordtype}{char} \mbox{\hyperlink{structcidade_a464d700ac5008603b97af21bc081a27e}{descricao}}[1024];}
+\DoxyCodeLine{13     \mbox{\hyperlink{structpois}{POIS}} \mbox{\hyperlink{structcidade_adb7b51a88d2497c170ac238f5cef64db}{pois}};}
+\DoxyCodeLine{14     \textcolor{keywordtype}{float} \mbox{\hyperlink{structcidade_ae55f065c95e023aa6c2514b2b9ad4a22}{lat}}, \mbox{\hyperlink{structcidade_af59ee077fefdb65db12a1543dde1d21f}{lon}};}
+\DoxyCodeLine{15 \} \mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \mbox{\hyperlink{structcidade}{CIDADE}} *\mbox{\hyperlink{cidade_8h_a2c4b94cedf6f815c33f2982c4b195a79}{criar\_cidade}}(\textcolor{keywordtype}{char} *nome, \textcolor{keywordtype}{char} *descricao, \textcolor{keywordtype}{float} lat, \textcolor{keywordtype}{float} lon);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keywordtype}{int} \mbox{\hyperlink{cidade_8h_af820aef2c1a2afba20fab50fb2fcef9b}{comparar\_cidades}}(\mbox{\hyperlink{structcidade}{CIDADE}} *a, \mbox{\hyperlink{structcidade}{CIDADE}} *b);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keywordtype}{void} \mbox{\hyperlink{cidade_8h_ae8756ffb89da5f6e9fe2ce6ecfdd58f9}{imprimir\_cidade}}(\mbox{\hyperlink{structcidade}{CIDADE}} *\mbox{\hyperlink{structcidade}{cidade}});}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJETOLP\_AED\_CIDADE\_H}}
+
+\end{DoxyCode}

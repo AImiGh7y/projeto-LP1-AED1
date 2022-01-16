@@ -16,6 +16,8 @@ typedef struct cidade {
 
 CIDADE *criar_cidade(char *nome, char *descricao, float lat, float lon);
 
+void mudar_nome_cidade(CIDADE *cidade, char *novo_nome);
+
 int comparar_cidades(CIDADE *a, CIDADE *b);
 
 void imprimir_cidade(CIDADE *cidade);

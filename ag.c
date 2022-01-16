@@ -160,7 +160,7 @@ GERACAO *ag_criar_proxima_geracao(AG *ag)
     }
 
     // elitismo
-    for(int i = ag->E; i < ag->P; i++) {
+    for(int i = ag->P - ag->E; i < ag->P; i++) {
         int p = selecao_por_aptidao(ag, ultima);
         ultima->herdeiros[i] = ultima->progenitores[p];
     }
@@ -189,11 +189,11 @@ GERACAO *ag_criar_proxima_geracao(AG *ag)
 
 VIAGEM *ag_melhor_aptidao(AG *ag, GERACAO *g)
 {
-    float melhor_aptidao = 99999;
+    float melhor_aptidao = 0;
     VIAGEM *melhor_viagem = NULL;
     for(int i = 0; i < ag->P; i++) {
         float A = calcular_aptidao(g->progenitores[i]);
-        if(A < melhor_aptidao) {
+        if(A > melhor_aptidao) {
             melhor_aptidao = A;
             melhor_viagem = g->progenitores[i];
         }

@@ -1,0 +1,134 @@
+\hypertarget{ag_8h}{}\doxysection{ag.\+h File Reference}
+\label{ag_8h}\index{ag.h@{ag.h}}
+{\ttfamily \#include \char`\"{}viagem.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgeracao}{geracao}}
+\item 
+struct \mbox{\hyperlink{structag}{ag}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structgeracao}{geracao}} \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}}
+\item 
+typedef struct \mbox{\hyperlink{structag}{ag}} \mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$ \mbox{\hyperlink{ag_8h_af7aba5ab0106136d6b5096961c536eb7}{ag\+\_\+criar}} (int P, float Q, int E, int G, int N)
+\item 
+\mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$ \mbox{\hyperlink{ag_8h_aa21242ab4f08c0189c105c6a2981549f}{geracao\+\_\+criar}} ()
+\item 
+void \mbox{\hyperlink{ag_8h_a9d8850880c7c7e77d4a46be374c8ed2b}{ag\+\_\+inserir\+\_\+geracao\+\_\+cabeca}} (\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$nova)
+\item 
+void \mbox{\hyperlink{ag_8h_a429cfa08a489a2852e74b0471da02c3c}{ag\+\_\+inserir\+\_\+geracao\+\_\+cauda}} (\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$nova)
+\item 
+\mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$ \mbox{\hyperlink{ag_8h_a089d607c0824c0387cbc0be4d37b4b25}{ag\+\_\+pesquisar\+\_\+geracao\+\_\+id}} (\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$\mbox{\hyperlink{structag}{ag}}, int iteracao)
+\item 
+\mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$ \mbox{\hyperlink{ag_8h_a730bf58159f8effac1e9dd214e238f28}{ag\+\_\+criar\+\_\+geracao\+\_\+aleatoria}} (\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$$\ast$cidades)
+\item 
+\mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$ \mbox{\hyperlink{ag_8h_a71d37ff7d7984711e83300c73a846021}{ag\+\_\+criar\+\_\+proxima\+\_\+geracao}} (\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$\mbox{\hyperlink{structag}{ag}})
+\item 
+float \mbox{\hyperlink{ag_8h_a85f1c339a705e3d51ac38e0c77d84bca}{calcular\+\_\+distancia}} (\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$\mbox{\hyperlink{structviagem}{viagem}})
+\item 
+float \mbox{\hyperlink{ag_8h_ad2c2feb710d56afba941c77ec34345a8}{calcular\+\_\+aptidao}} (\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$\mbox{\hyperlink{structviagem}{viagem}})
+\item 
+int \mbox{\hyperlink{ag_8h_a66781fec2e86651288606b1b353a4ba9}{selecao\+\_\+por\+\_\+aptidao}} (\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$\mbox{\hyperlink{structgeracao}{geracao}})
+\item 
+\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$ \mbox{\hyperlink{ag_8h_ab7f1069837e20eef6fb35b80d4b14f83}{cruzamento\+\_\+viagens}} (\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$p1, \mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$p2)
+\item 
+\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$ \mbox{\hyperlink{ag_8h_aeec851deb617fece86dd9d4139135fb2}{ag\+\_\+melhor\+\_\+aptidao}} (\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$g)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}\label{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}} 
+\index{ag.h@{ag.h}!AG@{AG}}
+\index{AG@{AG}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{AG}{AG}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structag}{ag}} \mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}}}
+
+\mbox{\Hypertarget{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}\label{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}} 
+\index{ag.h@{ag.h}!GERACAO@{GERACAO}}
+\index{GERACAO@{GERACAO}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{GERACAO}{GERACAO}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structgeracao}{geracao}} \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ag_8h_af7aba5ab0106136d6b5096961c536eb7}\label{ag_8h_af7aba5ab0106136d6b5096961c536eb7}} 
+\index{ag.h@{ag.h}!ag\_criar@{ag\_criar}}
+\index{ag\_criar@{ag\_criar}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{ag\_criar()}{ag\_criar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$ ag\+\_\+criar (\begin{DoxyParamCaption}\item[{int}]{P,  }\item[{float}]{Q,  }\item[{int}]{E,  }\item[{int}]{G,  }\item[{int}]{N }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_a730bf58159f8effac1e9dd214e238f28}\label{ag_8h_a730bf58159f8effac1e9dd214e238f28}} 
+\index{ag.h@{ag.h}!ag\_criar\_geracao\_aleatoria@{ag\_criar\_geracao\_aleatoria}}
+\index{ag\_criar\_geracao\_aleatoria@{ag\_criar\_geracao\_aleatoria}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{ag\_criar\_geracao\_aleatoria()}{ag\_criar\_geracao\_aleatoria()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$ ag\+\_\+criar\+\_\+geracao\+\_\+aleatoria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$}]{ag,  }\item[{\mbox{\hyperlink{cidade_8h_a4346f919c0fddbd70da339b63cac2cc6}{CIDADE}} $\ast$$\ast$}]{cidades }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_a71d37ff7d7984711e83300c73a846021}\label{ag_8h_a71d37ff7d7984711e83300c73a846021}} 
+\index{ag.h@{ag.h}!ag\_criar\_proxima\_geracao@{ag\_criar\_proxima\_geracao}}
+\index{ag\_criar\_proxima\_geracao@{ag\_criar\_proxima\_geracao}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{ag\_criar\_proxima\_geracao()}{ag\_criar\_proxima\_geracao()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$ ag\+\_\+criar\+\_\+proxima\+\_\+geracao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$}]{ag }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_a9d8850880c7c7e77d4a46be374c8ed2b}\label{ag_8h_a9d8850880c7c7e77d4a46be374c8ed2b}} 
+\index{ag.h@{ag.h}!ag\_inserir\_geracao\_cabeca@{ag\_inserir\_geracao\_cabeca}}
+\index{ag\_inserir\_geracao\_cabeca@{ag\_inserir\_geracao\_cabeca}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{ag\_inserir\_geracao\_cabeca()}{ag\_inserir\_geracao\_cabeca()}}
+{\footnotesize\ttfamily void ag\+\_\+inserir\+\_\+geracao\+\_\+cabeca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$}]{ag,  }\item[{\mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$}]{nova }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_a429cfa08a489a2852e74b0471da02c3c}\label{ag_8h_a429cfa08a489a2852e74b0471da02c3c}} 
+\index{ag.h@{ag.h}!ag\_inserir\_geracao\_cauda@{ag\_inserir\_geracao\_cauda}}
+\index{ag\_inserir\_geracao\_cauda@{ag\_inserir\_geracao\_cauda}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{ag\_inserir\_geracao\_cauda()}{ag\_inserir\_geracao\_cauda()}}
+{\footnotesize\ttfamily void ag\+\_\+inserir\+\_\+geracao\+\_\+cauda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$}]{ag,  }\item[{\mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$}]{nova }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_aeec851deb617fece86dd9d4139135fb2}\label{ag_8h_aeec851deb617fece86dd9d4139135fb2}} 
+\index{ag.h@{ag.h}!ag\_melhor\_aptidao@{ag\_melhor\_aptidao}}
+\index{ag\_melhor\_aptidao@{ag\_melhor\_aptidao}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{ag\_melhor\_aptidao()}{ag\_melhor\_aptidao()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$ ag\+\_\+melhor\+\_\+aptidao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$}]{ag,  }\item[{\mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$}]{g }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_a089d607c0824c0387cbc0be4d37b4b25}\label{ag_8h_a089d607c0824c0387cbc0be4d37b4b25}} 
+\index{ag.h@{ag.h}!ag\_pesquisar\_geracao\_id@{ag\_pesquisar\_geracao\_id}}
+\index{ag\_pesquisar\_geracao\_id@{ag\_pesquisar\_geracao\_id}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{ag\_pesquisar\_geracao\_id()}{ag\_pesquisar\_geracao\_id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$ ag\+\_\+pesquisar\+\_\+geracao\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$}]{ag,  }\item[{int}]{iteracao }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_ad2c2feb710d56afba941c77ec34345a8}\label{ag_8h_ad2c2feb710d56afba941c77ec34345a8}} 
+\index{ag.h@{ag.h}!calcular\_aptidao@{calcular\_aptidao}}
+\index{calcular\_aptidao@{calcular\_aptidao}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{calcular\_aptidao()}{calcular\_aptidao()}}
+{\footnotesize\ttfamily float calcular\+\_\+aptidao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{viagem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_a85f1c339a705e3d51ac38e0c77d84bca}\label{ag_8h_a85f1c339a705e3d51ac38e0c77d84bca}} 
+\index{ag.h@{ag.h}!calcular\_distancia@{calcular\_distancia}}
+\index{calcular\_distancia@{calcular\_distancia}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{calcular\_distancia()}{calcular\_distancia()}}
+{\footnotesize\ttfamily float calcular\+\_\+distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{viagem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_ab7f1069837e20eef6fb35b80d4b14f83}\label{ag_8h_ab7f1069837e20eef6fb35b80d4b14f83}} 
+\index{ag.h@{ag.h}!cruzamento\_viagens@{cruzamento\_viagens}}
+\index{cruzamento\_viagens@{cruzamento\_viagens}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{cruzamento\_viagens()}{cruzamento\_viagens()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$ cruzamento\+\_\+viagens (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{p1,  }\item[{\mbox{\hyperlink{viagem_8h_a9326a16c5caed3107d5f86147569601f}{VIAGEM}} $\ast$}]{p2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_aa21242ab4f08c0189c105c6a2981549f}\label{ag_8h_aa21242ab4f08c0189c105c6a2981549f}} 
+\index{ag.h@{ag.h}!geracao\_criar@{geracao\_criar}}
+\index{geracao\_criar@{geracao\_criar}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{geracao\_criar()}{geracao\_criar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$ geracao\+\_\+criar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ag_8h_a66781fec2e86651288606b1b353a4ba9}\label{ag_8h_a66781fec2e86651288606b1b353a4ba9}} 
+\index{ag.h@{ag.h}!selecao\_por\_aptidao@{selecao\_por\_aptidao}}
+\index{selecao\_por\_aptidao@{selecao\_por\_aptidao}!ag.h@{ag.h}}
+\doxysubsubsection{\texorpdfstring{selecao\_por\_aptidao()}{selecao\_por\_aptidao()}}
+{\footnotesize\ttfamily int selecao\+\_\+por\+\_\+aptidao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}} $\ast$}]{ag,  }\item[{\mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}} $\ast$}]{geracao }\end{DoxyParamCaption})}
+

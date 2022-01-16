@@ -20,4 +20,6 @@ void inserir_poi(POIS *pois, POI *poi);
 POI *pesquisar_nome_poi(POIS *pois, char *nome);
 void remover_poi(POIS *pois, POI *poi);
 
+void editar_nome_poi(POI *poi, char *novo_nome);
+
 #endif //PROJETOLP_AED_POI_H

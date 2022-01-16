@@ -17,6 +17,7 @@ VIAGEM *criar_viagem();
 void adicionar_cidade_a_viagem(VIAGEM *viagem, CIDADE *cidade);
 void remover_cidade_a_viagem(VIAGEM *viagem, char *nome);
 int viagem_tem_cidade(VIAGEM *viagem, CIDADE *cidade);
+CIDADE *viagem_pesquisar_cidade(VIAGEM *viagem, char *nome_cidade);
 
 int comparar_viagem(VIAGEM *a, VIAGEM *b);
 

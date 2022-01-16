@@ -1,0 +1,60 @@
+\hypertarget{ag_8h_source}{}\doxysection{ag.\+h}
+\mbox{\hyperlink{ag_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Nuno on 04/01/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef PROJETOLP\_AED\_AG\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define PROJETOLP\_AED\_AG\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{viagem_8h}{viagem.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{comment}{/*}}
+\DoxyCodeLine{11 \textcolor{comment}{ * ● P: tamanho da população inicial (número par) e para cada geração (exemplo P=20)}}
+\DoxyCodeLine{12 \textcolor{comment}{    ● Q: probabilidade de mutação dum gene (exemplo Q=0.01)}}
+\DoxyCodeLine{13 \textcolor{comment}{    ● E: número de indivíduos que passam por elitismo diretamente para a próxima}}
+\DoxyCodeLine{14 \textcolor{comment}{    geração (número par E, com E < P; exemplo E=2)}}
+\DoxyCodeLine{15 \textcolor{comment}{    ● G: número de gerações a serem executadas pelo AG (exemplo AG=50)}}
+\DoxyCodeLine{16 \textcolor{comment}{    ● N: número de cidades que representam o número de genes de cada indivíduo ou}}
+\DoxyCodeLine{17 \textcolor{comment}{    cromossoma (exemplo N=6)}}
+\DoxyCodeLine{18 \textcolor{comment}{ *}}
+\DoxyCodeLine{19 \textcolor{comment}{ *}}
+\DoxyCodeLine{20 \textcolor{comment}{ *}}
+\DoxyCodeLine{21 \textcolor{comment}{ * */}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structgeracao}{geracao}} \{}
+\DoxyCodeLine{24     \mbox{\hyperlink{structviagem}{VIAGEM}} **\mbox{\hyperlink{structgeracao_a90d3364087e8a4dba9b99da967c4a417}{progenitores}};}
+\DoxyCodeLine{25     \mbox{\hyperlink{structviagem}{VIAGEM}} **\mbox{\hyperlink{structgeracao_a895881b4a79b39aad72c9f469e46f4fa}{herdeiros}};}
+\DoxyCodeLine{26     \textcolor{keyword}{struct }\mbox{\hyperlink{structgeracao}{geracao}} *\mbox{\hyperlink{structgeracao_a7850fad5b20824509a53c9bc808dc27f}{proxima}};}
+\DoxyCodeLine{27 \} \mbox{\hyperlink{ag_8h_afd1d06d94f12f2c6aff27ece43b18ffb}{GERACAO}};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structag}{ag}} \{}
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} \mbox{\hyperlink{structag_aef94be98e2c9e4a4dece75f60ca9792c}{P}};  \textcolor{comment}{//tamanho da população inicial}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{float} \mbox{\hyperlink{structag_a2297f86a6b8c26836b1f21bcf17c7a8b}{Q}};    \textcolor{comment}{//probabilidade de mutação dum gene}}
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} \mbox{\hyperlink{structag_a105a63272424d04208f33bac739acf98}{E}};  \textcolor{comment}{//número de indivíduos que passam por elitismo diretamente para a próxima geração}}
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} \mbox{\hyperlink{structag_ab8735735273b982cc3125e51fe46e2f4}{G}};  \textcolor{comment}{//número de gerações}}
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} \mbox{\hyperlink{structag_a7722c8ecbb62d99aee7ce68b1752f337}{N}};  \textcolor{comment}{//número de cidades}}
+\DoxyCodeLine{35     \mbox{\hyperlink{structgeracao}{GERACAO}} *\mbox{\hyperlink{structag_a11e3b0677918706668ddfced7ed67636}{primeira\_geracao}};}
+\DoxyCodeLine{36 \} \mbox{\hyperlink{ag_8h_abaa614deefc1ddb0ac940dd325f4087e}{AG}};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \mbox{\hyperlink{structag}{AG}} *\mbox{\hyperlink{ag_8h_af7aba5ab0106136d6b5096961c536eb7}{ag\_criar}}(\textcolor{keywordtype}{int} P, \textcolor{keywordtype}{float} Q, \textcolor{keywordtype}{int} E, \textcolor{keywordtype}{int} G, \textcolor{keywordtype}{int} N);}
+\DoxyCodeLine{39 \mbox{\hyperlink{structgeracao}{GERACAO}} *\mbox{\hyperlink{ag_8h_aa21242ab4f08c0189c105c6a2981549f}{geracao\_criar}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{keywordtype}{void} \mbox{\hyperlink{ag_8h_a9d8850880c7c7e77d4a46be374c8ed2b}{ag\_inserir\_geracao\_cabeca}}(\mbox{\hyperlink{structag}{AG}} *\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{structgeracao}{GERACAO}} *nova);}
+\DoxyCodeLine{42 \textcolor{keywordtype}{void} \mbox{\hyperlink{ag_8h_a429cfa08a489a2852e74b0471da02c3c}{ag\_inserir\_geracao\_cauda}}(\mbox{\hyperlink{structag}{AG}} *\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{structgeracao}{GERACAO}} *nova);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \mbox{\hyperlink{structgeracao}{GERACAO}} *\mbox{\hyperlink{ag_8h_a089d607c0824c0387cbc0be4d37b4b25}{ag\_pesquisar\_geracao\_id}}(\mbox{\hyperlink{structag}{AG}} *\mbox{\hyperlink{structag}{ag}}, \textcolor{keywordtype}{int} iteracao);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \mbox{\hyperlink{structgeracao}{GERACAO}} *\mbox{\hyperlink{ag_8h_a730bf58159f8effac1e9dd214e238f28}{ag\_criar\_geracao\_aleatoria}}(\mbox{\hyperlink{structag}{AG}} *\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{structcidade}{CIDADE}} **cidades);}
+\DoxyCodeLine{47 \mbox{\hyperlink{structgeracao}{GERACAO}} *\mbox{\hyperlink{ag_8h_a71d37ff7d7984711e83300c73a846021}{ag\_criar\_proxima\_geracao}}(\mbox{\hyperlink{structag}{AG}} *\mbox{\hyperlink{structag}{ag}});}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keywordtype}{float} \mbox{\hyperlink{ag_8h_a85f1c339a705e3d51ac38e0c77d84bca}{calcular\_distancia}}(\mbox{\hyperlink{structviagem}{VIAGEM}} *\mbox{\hyperlink{structviagem}{viagem}});}
+\DoxyCodeLine{50 \textcolor{keywordtype}{float} \mbox{\hyperlink{ag_8h_ad2c2feb710d56afba941c77ec34345a8}{calcular\_aptidao}}(\mbox{\hyperlink{structviagem}{VIAGEM}} *\mbox{\hyperlink{structviagem}{viagem}});}
+\DoxyCodeLine{51 \textcolor{keywordtype}{int} \mbox{\hyperlink{ag_8h_a66781fec2e86651288606b1b353a4ba9}{selecao\_por\_aptidao}}(\mbox{\hyperlink{structag}{AG}} *\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{structgeracao}{GERACAO}} *\mbox{\hyperlink{structgeracao}{geracao}});}
+\DoxyCodeLine{52 \mbox{\hyperlink{structviagem}{VIAGEM}} *\mbox{\hyperlink{ag_8h_ab7f1069837e20eef6fb35b80d4b14f83}{cruzamento\_viagens}}(\mbox{\hyperlink{structviagem}{VIAGEM}} *p1, \mbox{\hyperlink{structviagem}{VIAGEM}} *p2);}
+\DoxyCodeLine{53 \mbox{\hyperlink{structviagem}{VIAGEM}} *\mbox{\hyperlink{ag_8h_aeec851deb617fece86dd9d4139135fb2}{ag\_melhor\_aptidao}}(\mbox{\hyperlink{structag}{AG}} *\mbox{\hyperlink{structag}{ag}}, \mbox{\hyperlink{structgeracao}{GERACAO}} *g);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJETOLP\_AED\_AG\_H}}
+
+\end{DoxyCode}

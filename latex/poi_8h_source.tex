@@ -1,0 +1,28 @@
+\hypertarget{poi_8h_source}{}\doxysection{poi.\+h}
+\mbox{\hyperlink{poi_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Nuno on 28/11/2021.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef PROJETOLP\_AED\_POI\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define PROJETOLP\_AED\_POI\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structpoi}{poi}} \{}
+\DoxyCodeLine{9     \textcolor{keywordtype}{char} \mbox{\hyperlink{structpoi_a00d2bc3e6964d92dae418effd6d12712}{nome}}[64];}
+\DoxyCodeLine{10     \textcolor{keywordtype}{char} \mbox{\hyperlink{structpoi_a00ee3d39056d6624828b5966fc50355c}{morada}}[256];}
+\DoxyCodeLine{11     \textcolor{keyword}{struct }\mbox{\hyperlink{structpoi}{poi}} *\mbox{\hyperlink{structpoi_a2677f0b88331fee7294774b9c662b6e6}{proximo}};}
+\DoxyCodeLine{12 \} \mbox{\hyperlink{poi_8h_ac802fb90706f3390e612abad946c909c}{POI}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structpois}{pois}} \{}
+\DoxyCodeLine{15     \mbox{\hyperlink{structpoi}{POI}} *\mbox{\hyperlink{structpois_a2fe0964ff868a1dd5bb4586e788f8218}{primeiro}};}
+\DoxyCodeLine{16 \} \mbox{\hyperlink{poi_8h_ae229ccc923cca5cd6cd7f62ebfe3f404}{POIS}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \mbox{\hyperlink{structpoi}{POI}} *\mbox{\hyperlink{poi_8h_aaee9c63441fa754d0aaf79eec0e69711}{criar\_poi}}(\textcolor{keywordtype}{char} *nome, \textcolor{keywordtype}{char} *morada);}
+\DoxyCodeLine{19 \textcolor{keywordtype}{void} \mbox{\hyperlink{poi_8h_ade96b553dfca0f06604e845b1959d33b}{inserir\_poi}}(\mbox{\hyperlink{structpois}{POIS}} *\mbox{\hyperlink{structpois}{pois}}, \mbox{\hyperlink{structpoi}{POI}} *\mbox{\hyperlink{structpoi}{poi}});}
+\DoxyCodeLine{20 \mbox{\hyperlink{structpoi}{POI}} *\mbox{\hyperlink{poi_8h_a011965f5640ab7b9eaf3fd0818c00e5f}{pesquisar\_nome\_poi}}(\mbox{\hyperlink{structpois}{POIS}} *\mbox{\hyperlink{structpois}{pois}}, \textcolor{keywordtype}{char} *nome);}
+\DoxyCodeLine{21 \textcolor{keywordtype}{void} \mbox{\hyperlink{poi_8h_a1c94b9a865790062ca1ecedd80e8abce}{remover\_poi}}(\mbox{\hyperlink{structpois}{POIS}} *\mbox{\hyperlink{structpois}{pois}}, \mbox{\hyperlink{structpoi}{POI}} *\mbox{\hyperlink{structpoi}{poi}});}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJETOLP\_AED\_POI\_H}}
+
+\end{DoxyCode}

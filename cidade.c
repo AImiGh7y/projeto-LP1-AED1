@@ -17,6 +17,11 @@ CIDADE *criar_cidade(char *nome, char *descricao, float lat, float lon)
     return cidade;
 }
 
+void mudar_nome_cidade(CIDADE *cidade, char *novo_nome)
+{
+    strcpy(cidade->nome, novo_nome);
+}
+
 int comparar_cidades(CIDADE *a, CIDADE *b) {
     if(strcmp(a->nome, b->nome) == 0 && strcmp(a->descricao, b->descricao) == 0)
         return 1;

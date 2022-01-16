@@ -1,0 +1,46 @@
+\hypertarget{clientes_8h_source}{}\doxysection{clientes.\+h}
+\mbox{\hyperlink{clientes_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Nuno on 14/11/2021.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef PROJETOLP\_AED\_CLIENTES\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define PROJETOLP\_AED\_CLIENTES\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{viagem_8h}{viagem.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structcliente}{cliente}} \{  \textcolor{comment}{// declaracao}}
+\DoxyCodeLine{11     \textcolor{keywordtype}{char} \mbox{\hyperlink{structcliente_a710c5078e92db21a23a3c0a85cbc72a3}{nome}}[128];}
+\DoxyCodeLine{12     \textcolor{keywordtype}{int} \mbox{\hyperlink{structcliente_a3c8cb391530940750238257a8fcb6aa8}{NIF}};}
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} \mbox{\hyperlink{structcliente_a33e0a1d8efad9306adbc4f990b9c07d7}{contacto}};}
+\DoxyCodeLine{14     \mbox{\hyperlink{structviagem}{VIAGEM}} *\mbox{\hyperlink{structcliente_a7636a379846762822b6f65828d1548e7}{viagens}};}
+\DoxyCodeLine{15     \textcolor{keywordtype}{int} \mbox{\hyperlink{structcliente_afdde8ddfd770fd779a8b7ee81819dc63}{num\_viagens}};}
+\DoxyCodeLine{16     \textcolor{keyword}{struct }\mbox{\hyperlink{structcliente}{cliente}} *\mbox{\hyperlink{structcliente_a4e3b6507982d519c7c25412c4e1bf5a5}{proximo}};}
+\DoxyCodeLine{17 \} \mbox{\hyperlink{clientes_8h_a26769430110345c8224ef99b907ac47d}{CLIENTE}};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structclientes}{clientes}} \{}
+\DoxyCodeLine{20     \mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{structclientes_aa5ecee58e924b09623ff30a7291959e2}{primeiro}};}
+\DoxyCodeLine{21 \} \mbox{\hyperlink{clientes_8h_a1a73adf16fcc71d5c7f1f234dbecf8c5}{CLIENTES}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \mbox{\hyperlink{structclientes}{CLIENTES}} *\mbox{\hyperlink{clientes_8h_a3346e59c2ca2b070c42939f000258b2d}{criar\_clientes}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{clientes_8h_a982498d88c0d0016b102ae0141e6ea21}{criar\_cliente}}(\textcolor{keywordtype}{char} *nome, \textcolor{keywordtype}{int} NIF, \textcolor{keywordtype}{int} contacto);}
+\DoxyCodeLine{26 \textcolor{keywordtype}{void} \mbox{\hyperlink{clientes_8h_a4f83ce0df05869c0f59c196ba33d3d7a}{inserir\_cabeca}}(\mbox{\hyperlink{structclientes}{CLIENTES}} *\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{structcliente}{cliente}});}
+\DoxyCodeLine{27 \textcolor{keywordtype}{void} \mbox{\hyperlink{clientes_8h_a0c922f55e9a8785a3ce6fffd427600df}{inserir\_cauda}}(\mbox{\hyperlink{structclientes}{CLIENTES}} *\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{structcliente}{cliente}});}
+\DoxyCodeLine{28 \textcolor{keywordtype}{void} \mbox{\hyperlink{clientes_8h_a86bf3cd094196635d582b27a9d53afb9}{inserir\_ordenado\_NIF}}(\mbox{\hyperlink{structclientes}{CLIENTES}} *\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{structcliente}{cliente}});}
+\DoxyCodeLine{29 \textcolor{keywordtype}{void} \mbox{\hyperlink{clientes_8h_ad2efd35a62b24f288a8e3de3572c4852}{inserir\_ordenado\_nome}}(\mbox{\hyperlink{structclientes}{CLIENTES}} *\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{structcliente}{cliente}});}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{clientes_8h_a95db671d8fc3679ce7082a3f88d2d11a}{pesquisar\_NIF}}(\mbox{\hyperlink{structclientes}{CLIENTES}} *\mbox{\hyperlink{structclientes}{clientes}}, \textcolor{keywordtype}{int} NIF);}
+\DoxyCodeLine{32 \mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{clientes_8h_a5bf4bd9ae1cee00dade8c8e91e1c09ea}{pesquisar\_nome}}(\mbox{\hyperlink{structclientes}{CLIENTES}} *\mbox{\hyperlink{structclientes}{clientes}}, \textcolor{keywordtype}{char} *nome);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keywordtype}{void} \mbox{\hyperlink{clientes_8h_acdf49cd32b8a80f0a232f5d9abfcfba4}{remover\_cliente}}(\mbox{\hyperlink{structclientes}{CLIENTES}} *\mbox{\hyperlink{structclientes}{clientes}}, \mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{structcliente}{cliente}});}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \mbox{\hyperlink{structviagem}{VIAGEM}} *\mbox{\hyperlink{clientes_8h_ab0c916e11a411f3e57ee8efae4f7bba1}{inserir\_viagem\_no\_cliente}}(\mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{structcliente}{cliente}});}
+\DoxyCodeLine{37 \textcolor{keywordtype}{void} \mbox{\hyperlink{clientes_8h_ae211b65c745194a451e1ad6f0205ea11}{remover\_viagem\_no\_cliente}}(\mbox{\hyperlink{structcliente}{CLIENTE}} *\mbox{\hyperlink{structcliente}{cliente}}, \mbox{\hyperlink{structviagem}{VIAGEM}} *\mbox{\hyperlink{structviagem}{viagem}});}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keywordtype}{void} \mbox{\hyperlink{clientes_8h_a652d54af2fb43771804795e660575b24}{imprimir\_clientes}}(\mbox{\hyperlink{structclientes}{CLIENTES}} *\mbox{\hyperlink{structclientes}{clientes}});}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJETOLP\_AED\_CLIENTES\_H}}
+
+\end{DoxyCode}
